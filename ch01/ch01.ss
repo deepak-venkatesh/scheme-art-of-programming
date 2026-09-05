@@ -1,5 +1,3 @@
-#lang racket
-
 ;; Ex 1.1
 
 ;;;; Using Chez Scheme 10.3.0 on emacs
