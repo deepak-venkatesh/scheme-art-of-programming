@@ -138,3 +138,18 @@ ab + bc = b(a + c)
 ;; e
 (cons (cons (cons 'one '()) '()) '())
 
+
+;; Ex 1.7
+
+#|
+
+The expression (cons alpha ls) will one more value than the number of values in ls.
+So the answer should be n + 1 values in the cons
+
+|#
+
+
+;; Ex 1.8
+
+> '(a 'b)
+(a 'b)
