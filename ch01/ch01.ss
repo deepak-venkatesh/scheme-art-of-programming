@@ -153,3 +153,30 @@ So the answer should be n + 1 values in the cons
 
 > '(a 'b)
 (a 'b)
+
+
+;; Ex 1.9
+
+;; a
+;; alpha
+
+;; b
+;; beta
+
+
+;; Ex 1.10
+
+;; a
+#f
+
+;; b
+#t
+
+;; c
+#f
+
+;; d
+#t
+
+;; Ex 1.11
+#t
