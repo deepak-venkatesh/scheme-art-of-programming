@@ -271,5 +271,56 @@ a
 
 ;; f
 
+
+;; Ex 1.15
+
+;; a
+
+> (eqv? (car '(a b)) (car (cdr '(b a))))
+#t
+
+
+;; b
+
+> (eqv? 'flea (car (cdr '(dog flea))))
+#t
+
+
+;; c
+
+> (eq? (cons 'a '(b c)) (cons 'a '(b c)))
+#f
+
+
+;; d
+
+> (eqv? (cons 'a '(b c)) (cons 'a '(b c)))
+#f
+
+
+;; e
+
+> (equal? (cons 'a '(b c)) (cons 'a '(b c)))
+#t
+
+
+;; f
+
+> (null? (cdr (cdr '((a b c) d))))
+#t
+
+
+;; g
+
+> (null? (car '(())))
+#t
+
+
+;; h
+
+> (null? (car '((()))))
+#f
+
+
 > (pair? (cons '() '()))
 #t
