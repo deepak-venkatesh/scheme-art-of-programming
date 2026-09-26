@@ -180,3 +180,40 @@ So the answer should be n + 1 values in the cons
 
 ;; Ex 1.11
 #t
+
+;; Ex 1.12
+
+;; a
+
+> (cdr '((a (b c) d)))
+()
+
+;; b
+
+> (car (cdr (cdr '(a (b c) (d e)))))
+(d e)
+
+;; c
+
+> (car (cdr '((1 2) (3 4) (5 6))))
+(3 4)
+
+;; d
+
+> (cdr (car '((1 2) (3 4) (5 6))))
+(2)
+
+;; e
+
+> (car (cdr (car '((cat dog hen)))))
+dog
+
+;; f
+
+> (cadr '(a b c d))
+b
+
+;; g
+
+> (cadar '((a b) (c d) (e f)))
+b
