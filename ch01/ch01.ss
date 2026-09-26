@@ -217,3 +217,26 @@ b
 
 > (cadar '((a b) (c d) (e f)))
 b
+
+
+;; Ex 1.13
+
+;; a
+
+> (car (cdr (cdr '(b c a d))))
+a
+
+;; b
+
+> (car (cdr (car '((b a) (c d)))))
+a
+
+;; c
+
+> (car (car (cdr '((d c) (a) b))))
+a
+
+;; d
+
+> (car (car (car '(((a))))))
+a
