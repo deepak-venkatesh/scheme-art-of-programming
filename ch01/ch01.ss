@@ -240,3 +240,36 @@ a
 
 > (car (car (car '(((a))))))
 a
+
+
+;; Ex 1.14
+
+;; a
+
+> (symbol? (car '(cat mouse)))
+#t
+
+;; b
+
+> (symbol? (cdr '((cat mouse))))
+#f
+
+;; c
+
+> (symbol? (cdr '(cat mouse)))
+#f
+
+;; d
+
+> (pair? (cons 'hound '(dog)))
+#t
+
+;; e
+
+> (pair? (car '(cheshire cat)))
+#f
+
+;; f
+
+> (pair? (cons '() '()))
+#t
